@@ -54,7 +54,7 @@ button{
 
     border-radius:8px;
 }
-.add{
+#addBtn{
     background-color: rgb(28, 197, 28); 
     color:#fff;
     font-size: large;
@@ -65,11 +65,11 @@ button{
     color:white;
     border:none;
 }
-.add:hover{
+#addBtn:hover{
     background-color: rgb(34, 34, 92);
     color:rgb(28, 197, 28); ;
 }
-#clear_all{
+#clearAll{
     color:#fff;
     background-color: chocolate;
     font-size: large;

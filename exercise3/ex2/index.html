@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+        <h1>Expense Tracker</h1>
+         <div class="inputs">
+        <label>Expense name: </label>
+        <input type="text"  placeholder="Enter your expense name" id="expenseinput">
+        <div class="inputamount">
+        <label>Amount: <label>
+        <input type="number"  placeholder="Amount" id="amountinput">
+        </div>
+        <button class="add" id="addBtn">Add</button>
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Expense</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="items">
+         
+           </tbody>
+            <tfoot>
+        <tr>
+            <td colspan="2"><strong>Total</strong></td>
+
+            <td id="totalAmount">0</td>
+
+            <td></td>
+        </tr>
+    </tfoot>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

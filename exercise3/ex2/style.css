@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     background-color: rgb(252, 194, 194);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+   
+    text-align: center;
+}
+.container h1{
+    font-size: 4rem;
+    color:blueviolet ;
+    margin-bottom: 30px;
+}
+.inputs{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.inputamount{
+    margin: 0 20px;
+}
+.container label{
+   font-size: 1.4rem;
+}
+.container input{
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1rem;
+    outline: none;
+    margin-top: -10px;
+    outline:1.3px solid blueviolet ;
+    border: none;
+}
+.add{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: aliceblue;
+    border: 1px solid rgb(252, 194, 194);
+    background-color: blueviolet;
+
+}
+.add:hover{
+    color:blueviolet;
+    background-color: #Fff;
+}
+/* .items{
+    
+}  */
+table{
+    /* border : 1px solid rgb(70, 12, 12); */
+      border-collapse:collapse;
+      width: 800px;
+      border-radius: 10px;
+}
+th,
+td{
+    /* border:1px solid rgb(70, 12, 12); */
+    padding:12px;
+    text-align:center;
+      border-radius: 10px;
+}
+
+th {
+    background:#333;
+    color:white;
+    border-radius: 10px;
+}
+td,.items{
+    background:#a24545;
+    color:white;
+    border-radius: 10px;
+}
+.delete{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: aliceblue;
+    border: 1px solid rgb(252, 194, 194);
+    background-color: rgb(78, 4, 4);
+}
+.delete:hover{
+    color:rgb(78, 4, 4); 
+    background-color: #a24545;
+}
+tfoot td{
+    padding:10px;
+    background-color: #f2f2f2;
+      color: #333;
+      font-weight:bold;
+}
