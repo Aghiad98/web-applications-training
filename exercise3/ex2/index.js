@@ -4,6 +4,7 @@ const AmountInput =document.getElementById("amountinput")
 const AddBtn = document.getElementById("addBtn")
 const items = document.getElementById("items")
 const totalAmount =document.getElementById("totalAmount");
+
 let Expenses = JSON.parse(localStorage.getItem("Expenses")) || [];
 
 
@@ -31,8 +32,9 @@ function addexpens(){
         return
     }
     Expenses.push({
-        expense: expense,
-        amount: amount
+         
+        expense,
+        amount
     })
     
     saveItems()
@@ -47,7 +49,6 @@ function addexpens(){
        
     Expenses.forEach((item,index)=>{
         let row = document.createElement("tr")
-        
         row.innerHTML=`
         <td>${index + 1}</td>
         <td>${item.expense}</td>

@@ -1,0 +1,154 @@
+*::before , *::after , *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(1, 5, 15);
+   
+}
+.gamePlaceholder{
+      height: 100vh;
+    overflow: hidden;
+    background-image: url(/imgs/backgroundsquares.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.gamePlaceholder::before{
+     content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    box-shadow: 20px 20px 50px 50px red;
+    z-index: -1;
+    animation: redbackground 6s infinite linear;
+}
+@keyframes redbackground{
+    0%{
+       
+        opacity: 0;
+    }
+    50%{
+        opacity: 2;
+    }
+    100%{
+        top: 100%;
+         opacity: 0;
+    }
+}
+.gameControl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 20px;
+}
+.gameControl .points{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gameControl h3{
+    font-size: 2rem;
+    color: white;
+}
+.gameControl .points span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+   
+}
+.gameContainer{
+    width: 450px;
+    height: 450px;
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: repeat(3 , 150px);
+    grid-template-rows: repeat(3 , 150px);
+}
+.gameContainer span{
+    border: 5px solid #3c3c3c;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    text-align:center ;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.resultPlaceholder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(255 , 255 , 255 , 0);
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 10px;
+    border: 10px solid red;
+    display: none;
+    color: white;
+}
+
+.redColor{
+    color: white;
+    text-shadow: 5px 5px 20px red;
+}
+.blueColor{
+    color: white;
+    text-shadow: 5px 5px 20px blue;
+}
+.fullCell{
+    pointer-events: none;
+    background: #0a0a0a;
+}
+
+.fadeToRight{
+    animation: fadeToRight 4s  linear;
+    
+}
+@keyframes fadeToRight {
+    0%{
+        opacity: 0;
+        left: 20%;
+    }
+    50%{
+         opacity: 1;
+        left: 50%;
+    }
+    100%{
+        opacity: 0;
+        left: 100%;
+    }
+}
+/* .DrawToRight{
+    animation: DrawToRight 2s  linear;
+    
+}
+@keyframes DrawToRight {
+    0%{
+        opacity: 0;
+        left: 40%;
+    }
+    50%{
+         opacity: 1;
+        left: 50%;
+    }
+    100%{
+        opacity: 0;
+        left: 100%;
+    }
+} */
