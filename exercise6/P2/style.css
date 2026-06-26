@@ -76,9 +76,6 @@
 .card3{
         background-color: #b0d8d6;
         color: #292933;
-         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
   animation: card3Animation 2s ease  forwards;
 }
 @keyframes card3Animation {
@@ -97,9 +94,7 @@
 }
 .card4{
            background-color: #e7cb57;
-             display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    
          animation: card4Animation 2s ease  forwards;
 }
 @keyframes card4Animation {
@@ -118,9 +113,7 @@
 }
 .card5{
         background-color: #b9c1cc;
-          display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+         
         animation: rowAnimation 2s ease  forwards;
 }
 .card5 .icon svg{
