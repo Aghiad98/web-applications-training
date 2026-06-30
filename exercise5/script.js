@@ -1,3 +1,6 @@
+//! يوجد مشكلة في حال الفوز و الانيمشن , غير محددة بالضبط
+//!   لكن يمكن ان تكون واضحة لك في حال تجريب الللعبة كذا مرة في حالات التعادل او حالات الفوز الاكس او الأو
+
 const GameContainer = document.querySelector('.gameContainer');
 const XPointsPlaceholder =document.querySelector(".xPoints");
 const OPointsPlaceholder =document.querySelector(".oPoints");
