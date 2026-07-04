@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const GameContainer = document.querySelector('.gameContainer');
 // const XPointsPlaceholder =document.querySelector(".xPoints");
 // const OPointsPlaceholder =document.querySelector(".oPoints");
@@ -122,6 +123,10 @@
 
 // //! يوجد مشكلة في حال الفوز و الانيمشن , غير محددة بالضبط
 // !   لكن يمكن ان تكون واضحة لك في حال تجريب الللعبة كذا مرة في حالات التعادل او حالات الفوز الاكس او الأو
+=======
+//! يوجد مشكلة في حال الفوز و الانيمشن , غير محددة بالضبط
+//!   لكن يمكن ان تكون واضحة لك في حال تجريب الللعبة كذا مرة في حالات التعادل او حالات الفوز الاكس او الأو
+>>>>>>> d4bf82de385f4b995816104cff23eeabc5991438
 
 const GameContainer = document.querySelector('.gameContainer');
 const XPointsPlaceholder =document.querySelector(".xPoints");
