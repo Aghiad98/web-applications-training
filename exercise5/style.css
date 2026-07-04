@@ -117,7 +117,7 @@ body{
 }
 
 .fadeToRight{
-    animation: fadeToRight 4s  linear;
+    animation: fadeToRight 2s  linear;
     
 }
 @keyframes fadeToRight {
@@ -125,30 +125,9 @@ body{
         opacity: 0;
         left: 20%;
     }
-    50%{
-         opacity: 1;
+   
+    100%{
+        opacity: 1;
         left: 50%;
     }
-    100%{
-        opacity: 0;
-        left: 100%;
-    }
 }
-/* .DrawToRight{
-    animation: DrawToRight 2s  linear;
-    
-}
-@keyframes DrawToRight {
-    0%{
-        opacity: 0;
-        left: 40%;
-    }
-    50%{
-         opacity: 1;
-        left: 50%;
-    }
-    100%{
-        opacity: 0;
-        left: 100%;
-    }
-} */
