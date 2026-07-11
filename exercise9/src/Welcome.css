@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Welcome{
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px;
+  border: 2px solid gray;
+  text-align: center;
+  padding-top: 150px;
+}
+.btn{
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: larger;
+  letter-spacing: 3px;
+}
+.btn:hover{
+  color: blue;
+  background-color: #fff;
+  border:2px solid blue;
+}

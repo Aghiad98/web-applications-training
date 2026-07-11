@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.signup{
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  margin-top: 50px;
+  padding: 30px;
+  border: 2px solid gray;
+  padding-top: 20px;
+  background-color: ghostwhite;
+  text-align: center;
+}
+.signup h1{
+   padding-top: 50px;
+   margin-bottom: 30px;
+}
+.signup p{
+  padding-top: 20px;
+  font-size: large;
+}
+.signup input{
+  width: 200px;
+  height: 25px;
+  margin-top: 10px;
+}
+.signup input:focus{
+  border: none;
+  
+}
