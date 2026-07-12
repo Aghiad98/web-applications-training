@@ -8,7 +8,7 @@ function DashboardLayout() {
       <Sidebar />
 
       <div className="content">
-        <Outlet />
+        <Outlet /> 
       </div>
 
     </div>
