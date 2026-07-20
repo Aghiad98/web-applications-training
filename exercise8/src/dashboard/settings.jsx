@@ -7,6 +7,7 @@ function Settings() {
       <h2>Settings page</h2>
       <ul>
         <li>
+          {/* actually i wanted a nested routes in here */}
           <NavLink to='/dashboard/UserProfile'>UserProfile</NavLink>
         </li>
         <li>Notfications</li>
