@@ -1,13 +1,21 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+
+import UserProvider from "./context/UserProvider.jsx";
+import ThemeProvider from "./context/ThemeProvider.jsx";
+import CurenncyProvider from "./context/CurenncyContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-       
-    </BrowserRouter>
-  </StrictMode>
+  <CurenncyProvider>
+    <ThemeProvider>
+      <UserProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </UserProvider>
+    </ThemeProvider>
+  </CurenncyProvider>,
 );

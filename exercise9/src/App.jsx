@@ -1,35 +1,34 @@
-import { Routes, Route } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
+import './App.css';
+// import './DashboardLayout.css'
+import Home from './pages/Home';
+import Products from './pages/Products';
+import Settings from './pages/Settings';
+import ProductDetails from './pages/ProductDetails';
 
-import Welcome from "./Welcome";
-import Signup from "./Signup";
-import DashboardLayout from "./DashboardLayout";
+import DashboardLayout from './DashboardLayout'
+import UserProfile from "./pages/UserProfile";
+import ThemeSettings from "./pages/ThemeSettings";
+import CurrencySettings from "./pages/CurrencySettings";
+function App(){
+   return (
+    <>
+   
+     <Routes>
+        <Route path="/" element={<DashboardLayout/>}>
+        <Route index  element = {<Home/>}/>
+        <Route path ='Products' element = {<Products/>}/>
+        <Route path ='ProductDetails/:id' element = {<ProductDetails/>}/>
+       <Route path ='Settings' element = {<Settings/>}/>
+        <Route path="Settings/UserProfile" element={<UserProfile/>}/>
+        <Route path="Settings/ThemeSettings" element={<ThemeSettings/>}/>
+        <Route path="Settings/CurrencySettings" element={<CurrencySettings/>}/>
+        </Route>
+      </Routes> 
 
-import Home from "./dashboard/Home";
-import Products from "./dashboard/products";
-import Services from "./dashboard/services";
-import Contact from "./dashboard/contact";
-import Settings from "./dashboard/settings";
-import UserProfile from "./dashboard/UserProfile";
-
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Welcome />} />
-      <Route path="/signup" element={<Signup />} />
-
-      <Route path="/dashboard" element={<DashboardLayout />}>
-        <Route path="home" element={<Home />} />
-        <Route path="products" element={<Products />} />
-        <Route path="services" element={<Services />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="settings" element={<Settings />} />
-        <Route path="UserProfile" element={<UserProfile/>}/>
-      
-      
-       
-      </Route>
-    </Routes>
-  );
+    </>
+  )
 }
+ 
 
-export default App;
+export default App

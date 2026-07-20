@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./dashboard.css"
+import UserContext from "../UserContext";
+import React, { useContext } from 'react'
 function Sidebar() {
+ const {user} = useContext(UserContext);
   return (
     <aside className="sidebar">
 
-      <h2>Dashboard</h2>
+      <h2>Welcome {user}</h2>
 
       <ul>
 
