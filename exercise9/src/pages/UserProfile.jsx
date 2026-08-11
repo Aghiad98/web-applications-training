@@ -16,7 +16,9 @@ const [email, setEmail] = useState(state.email);
   const handleSubmit = (e) => {
 
     e.preventDefault();
-
+    if(!email || !name){
+      return alert ("you must enter all data")
+    }
     dispatch({
         type: "SET_USER",
         payload: {

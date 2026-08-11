@@ -1,25 +1,30 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useContext, useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import useFetch from '../custom hooks/FetchData';
+import { CurenncyContext } from '../context/CurenncyContext';
 
 function ProductDetails() {
-  const {id} = useParams()
+  const {id} = useParams();
+  let {price} = useContext(CurenncyContext);
+  let { data , loading , Error } =useFetch(`https://fakestoreapi.com/products/${id}`);
+  const productprice = useMemo(()=>{
+return  price === "USD" ? data.price : data.price*13000
+  })
    const navigate = useNavigate();
    const handleback =()=>{
     navigate(-1)
    }
-  console.log(id)
-  let { data , loading , Error } =useFetch(`https://fakestoreapi.com/products/${id}`);
+  
   if (loading) return<h2>loading ...</h2>
-console.log(data)
+
   return (
     <>
     <button className='btn' onClick={handleback}>Back</button>
     <div className='productCard'>
       <h3>{data.title}</h3>
      <img src={data.image} alt={data.title}/>
-     <h4>${data.price}</h4>
+     <h4>{price === 'USD' ? `${productprice} $` : `${Math.round(productprice)} Sy`}</h4>
      <p>{data.description}</p>
     </div>
    

@@ -19,7 +19,7 @@ function App(){
         <Route index  element = {<Home/>}/>
         <Route path ='Products' element = {<Products/>}/>
         <Route path ='ProductDetails/:id' element = {<ProductDetails/>}/>
-       <Route path ='Settings' element = {<Settings/>}/>
+        <Route path ='Settings' element = {<Settings/>}/>
         <Route path="Settings/UserProfile" element={<UserProfile/>}/>
         <Route path="Settings/ThemeSettings" element={<ThemeSettings/>}/>
         <Route path="Settings/CurrencySettings" element={<CurrencySettings/>}/>
