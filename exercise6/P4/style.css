@@ -222,7 +222,6 @@ margin-bottom: 25px;
 .section4 h2{
     font-size: 3rem;
     line-height: 1.1;
-    
     font-weight: 700;
 }
 .section4 p{
@@ -423,7 +422,7 @@ margin-bottom: 25px;
 }
 @media (max-width:1200px){
     .section-hero-img1{
-        margin-left: 150px;
+        margin-left: 50px;
     }
         .s4-left img{
         width: 500px;

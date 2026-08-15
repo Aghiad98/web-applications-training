@@ -18,7 +18,7 @@ const section = document.querySelector(".section-hero-counter");
                 count.textContent=
                 current + "K+"
             }else{
-                current+=1
+                current++
                 count.textContent=
                 current + "K+"
             }
